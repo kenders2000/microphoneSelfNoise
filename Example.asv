@@ -1,0 +1,13 @@
+clear all
+close all
+
+
+%Example - Generate Some microphone self noise of length lenT (seconds)
+%using sampling rate Fs
+lenT=1;
+Fs=44100;
+
+%Each result is random
+[y  MU SIGMA ]=generateSelfnoise(lenT,Fs);
+
+soundsc(y,Fs)
