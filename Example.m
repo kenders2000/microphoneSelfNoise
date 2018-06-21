@@ -14,7 +14,7 @@ Fs=44100;
 soundsc(y,Fs)
 
 % in this case we use a previoulsy generated self noise spectrum Y (where
-% Fs = 44100 and using a 512 point fft
+% Fs = 44100 and using a 512 point fft, (257 points, positive freqs and DC)
 [y Y]=generateSelfnoise(lenT,Fs,Y);
 
 soundsc(y,Fs)
